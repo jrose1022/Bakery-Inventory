@@ -4,11 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sweet Crumbs Bakery</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
-
 <script>
   tailwind.config = {
     theme: {
@@ -60,78 +58,156 @@
         Login
       </button>
     </div>
-
   </div>
 </section>
 
-<!-- BEST SELLERS -->
+<div class="relative -mt-2">
+  <svg viewBox="0 0 1440 180" class="w-full h-[130px]" preserveAspectRatio="none">
+    <path fill="#fdf2f8"
+      d="M0,64L40,85.3C80,107,160,149,240,149.3C320,149,400,107,480,101.3C560,96,640,128,720,128C800,128,880,96,960,85.3C1040,75,1120,85,1200,96C1280,107,1360,117,1400,122.7L1440,128L1440,0L0,0Z">
+    </path>
+  </svg>
+</div>
+
 <section class="py-16 text-center">
 
-  <h2 class="text-3xl font-heading font-bold mb-10">
+  <h2 class="text-3xl md:text-4xl font-heading font-bold mb-10">
     Check Out Our <span class="text-pink-600">Best Sellers</span>
   </h2>
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
 
-    <div class="group">
-      <img src="img/cake.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
-      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Soft Strawberry Cream Cake</p>
+    <div class="group text-center">
+      <img src="img/cake.jpg"
+        class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-2xl transition duration-300 ease-in-out group-hover:scale-110">
+
+      <p class="mt-2 text-pink-600 text-sm md:text-base opacity-0 group-hover:opacity-100 transition duration-300">
+        Soft Strawberry Cream Cake 
+      </p>
     </div>
 
-    <div class="group">
-      <img src="img/cake2.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
-      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Fluffy Vanilla Cake</p>
+    <div class="group text-center">
+      <img src="img/cake2.jpg"
+        class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-2xl transition duration-300 ease-in-out group-hover:scale-110">
+
+      <p class="mt-2 text-pink-600 text-sm md:text-base opacity-0 group-hover:opacity-100 transition duration-300">
+        Fluffy Vanilla Cake
+      </p>
     </div>
 
-    <div class="group">
-      <img src="img/cake3.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
-      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Colorful Buttercream Cake</p>
+    <div class="group text-center">
+      <img src="img/cake3.jpg"
+        class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-2xl transition duration-300 ease-in-out group-hover:scale-110">
+
+      <p class="mt-2 text-pink-600 text-sm md:text-base opacity-0 group-hover:opacity-100 transition duration-300">
+        Colorful Buttercream Cake
+      </p>
     </div>
 
-    <div class="group">
-      <img src="img/cake4.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
-      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Butterfly Cake</p>
+    <div class="group text-center">
+      <img src="img/cake4.jpg"
+        class="w-40 h-40 md:w-48 md:h-48 object-cover mx-auto rounded-2xl transition duration-300 ease-in-out group-hover:scale-110">
+
+      <p class="mt-2 text-pink-600 text-sm md:text-base opacity-0 group-hover:opacity-100 transition duration-300">
+        Butterfly Cake
+      </p>
     </div>
 
   </div>
 
+ 
+
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-pink-50 text-center py-12">
-  <h3 class="text-2xl font-bold text-pink-700">Sweet Crumbs Bakery</h3>
-  <p class="text-gray-600 mt-2">Baked with love, served with sweetness</p>
+<div class="relative -mb-1 rotate-180">
+  <svg viewBox="0 0 1440 120" class="w-full h-[100px]" preserveAspectRatio="none">
+    <path fill="#fdf2f8"
+      d="M0,64L60,85.3C120,107,240,149,360,138.7C480,128,600,64,720,53.3C840,43,960,85,1080,106.7C1200,128,1320,128,1380,128L1440,128L1440,0L0,0Z">
+    </path>
+  </svg>
+</div>
+
+<footer class="bg-pink-50 text-center py-12 px-6">
+
+  <h3 class="text-2xl md:text-3xl font-bold text-pink-700">
+    Sweet Crumbs Bakery
+  </h3>
+
+  <p class="text-gray-600 mt-2 text-sm md:text-base">
+    Baked with love, served with sweetness
+  </p>
+
+  <div class="mt-6 space-y-2 text-gray-700 text-sm">
+    <p class="flex justify-center items-center space-x-2">
+      <i class="fa-solid fa-phone text-pink-500"></i>
+      <span>0912-345-6789</span>
+    </p>
+
+    <p class="flex justify-center items-center space-x-2">
+      <i class="fa-solid fa-envelope text-pink-500"></i>
+      <span>sweetcrumbs@email.com</span>
+    </p>
+
+    <p class="flex justify-center items-center space-x-2">
+      <i class="fa-solid fa-location-dot text-pink-500"></i>
+      <span>Imus, Cavite</span>
+    </p>
+  </div>
+
+  <div class="flex justify-center space-x-5 mt-6 text-xl">
+    <a href="#" class="text-pink-500 hover:text-pink-700 hover:scale-110 transition">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="#" class="text-pink-500 hover:text-pink-700 hover:scale-110 transition">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#" class="text-pink-500 hover:text-pink-700 hover:scale-110 transition">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+
+  <p class="text-gray-400 text-xs mt-8">
+    © 2026 Sweet Crumbs Bakery. All rights reserved.
+  </p>
+
 </footer>
 
 <!-- LOGIN MODAL -->
-<div id="loginModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+<div id="loginModal" class="fixed inset-0 hidden items-center justify-center z-50">
 
-  <div class="bg-[#b8a898] rounded-3xl p-6 w-full max-w-md relative">
+  <div class="bg-pink-700 rounded-3xl p-6 w-full max-w-md relative">
 
     <!-- CLOSE -->
     <button onclick="closeLoginModal()" 
-      class="absolute top-2 right-4 text-white text-xl">&times;</button>
+      class="absolute top-2 right-4 text-white text-xl">&times;
+    </button>
 
-    <form class="bg-[#e7ded4] rounded-2xl p-6">
+    <h2 class="text-md font-heading font-bold text-white mb-3 text-center">
+        Inventory Management System Login
+    </h2>
 
-      <div class="bg-[#cfc3b6] rounded-lg px-4 py-3 mb-4">
+    <form class="bg-[#fdf2f8] rounded-2xl p-6">
+
+      <div class="bg-pink-600 rounded-lg px-4 py-3 mb-4">
         <input type="text" placeholder="Username"
           class="bg-transparent outline-none w-full placeholder-white" required>
       </div>
 
-      <div class="bg-[#cfc3b6] rounded-lg px-4 py-3 mb-4">
+      <div class="bg-pink-600 rounded-lg px-4 py-3 mb-4">
         <input type="password" placeholder="Password"
           class="bg-transparent outline-none w-full placeholder-white" required>
       </div>
 
       <div class="flex justify-between">
         <button type="button" onclick="openSignupModal()"
-          class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+          class="bg-pink-600 text-white px-4 py-2 rounded-lg">
           Sign up
         </button>
 
         <button type="submit"
-          class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+          class="bg-pink-600 text-white px-4 py-2 rounded-lg">
           Login
         </button>
       </div>
@@ -144,10 +220,10 @@
 <div id="signupModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
 
   <div class="bg-white rounded-2xl p-6 text-center">
-    <p class="mb-4">No sign up feature yet 😅</p>
+    <p class="mb-4">No sign up feature yet. </p>
 
     <button onclick="closeSignupModal()"
-      class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+      class="bg-pink-600 text-white px-4 py-2 rounded-lg">
       OK
     </button>
   </div>
