@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Crumbs Bakery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          heading: ['Playfair Display', 'serif'],
+          body: ['Poppins', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+
+<body class="font-body overflow-x-hidden bg-white">
+
+<!-- NAVBAR -->
+<nav class="bg-white/80 backdrop-blur-md text-gray-800 p-4 flex items-center justify-between shadow-md">
+  <img src="img/logo.png" class="h-10 w-auto">
+
+  <div class="flex space-x-6 text-sm md:text-base">  
+    <a href="index.html" class="text-pink-500 hover:text-pink-900 transition">Home</a>
+    <a href="about.html" class="text-pink-500 hover:text-pink-900 transition">About</a>
+    <a href="Service.html" class="text-pink-500 hover:text-pink-900 transition">Services</a>
+    <a href="game.html" class="text-pink-500 hover:text-pink-900 transition">Game</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-pink-50 py-16 px-8">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <video class="w-full h-[300px] md:h-[400px] object-cover rounded-3xl shadow-lg" autoplay muted loop>
+      <source src="img/Cake.mp4">
+    </video>
+
+    <div>
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-pink-700 mb-4">
+        Deliver You A Blissful Dessert in Every Bite
+      </h1>
+
+      <p class="text-gray-600 mb-6">
+        Freshly baked cakes, pastries, and desserts made with love for every sweet craving.
+      </p>
+
+      <button onclick="openLoginModal()" 
+        class="bg-pink-700 text-white px-6 py-2 rounded-full hover:bg-pink-400 transition">
+        Login
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="py-16 text-center">
+
+  <h2 class="text-3xl font-heading font-bold mb-10">
+    Check Out Our <span class="text-pink-600">Best Sellers</span>
+  </h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+    <div class="group">
+      <img src="img/cake.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
+      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Soft Strawberry Cream Cake</p>
+    </div>
+
+    <div class="group">
+      <img src="img/cake2.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
+      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Fluffy Vanilla Cake</p>
+    </div>
+
+    <div class="group">
+      <img src="img/cake3.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
+      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Colorful Buttercream Cake</p>
+    </div>
+
+    <div class="group">
+      <img src="img/cake4.jpg" class="w-40 h-40 mx-auto rounded-2xl group-hover:scale-110 transition">
+      <p class="mt-2 text-pink-600 opacity-0 group-hover:opacity-100">Butterfly Cake</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-pink-50 text-center py-12">
+  <h3 class="text-2xl font-bold text-pink-700">Sweet Crumbs Bakery</h3>
+  <p class="text-gray-600 mt-2">Baked with love, served with sweetness</p>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+
+  <div class="bg-[#b8a898] rounded-3xl p-6 w-full max-w-md relative">
+
+    <!-- CLOSE -->
+    <button onclick="closeLoginModal()" 
+      class="absolute top-2 right-4 text-white text-xl">&times;</button>
+
+    <form class="bg-[#e7ded4] rounded-2xl p-6">
+
+      <div class="bg-[#cfc3b6] rounded-lg px-4 py-3 mb-4">
+        <input type="text" placeholder="Username"
+          class="bg-transparent outline-none w-full placeholder-white" required>
+      </div>
+
+      <div class="bg-[#cfc3b6] rounded-lg px-4 py-3 mb-4">
+        <input type="password" placeholder="Password"
+          class="bg-transparent outline-none w-full placeholder-white" required>
+      </div>
+
+      <div class="flex justify-between">
+        <button type="button" onclick="openSignupModal()"
+          class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+          Sign up
+        </button>
+
+        <button type="submit"
+          class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+          Login
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<!-- SIGNUP MODAL -->
+<div id="signupModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+
+  <div class="bg-white rounded-2xl p-6 text-center">
+    <p class="mb-4">No sign up feature yet 😅</p>
+
+    <button onclick="closeSignupModal()"
+      class="bg-[#b8a898] text-white px-4 py-2 rounded-lg">
+      OK
+    </button>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openLoginModal() {
+  document.getElementById("loginModal").classList.remove("hidden");
+  document.getElementById("loginModal").classList.add("flex");
+}
+
+function closeLoginModal() {
+  document.getElementById("loginModal").classList.add("hidden");
+}
+
+function openSignupModal() {
+  document.getElementById("signupModal").classList.remove("hidden");
+  document.getElementById("signupModal").classList.add("flex");
+}
+
+function closeSignupModal() {
+  document.getElementById("signupModal").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
